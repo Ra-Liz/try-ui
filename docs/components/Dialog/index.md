@@ -7,23 +7,7 @@ title: 'Dialog'
 
 ## 基础用法
 <em>需要`modelValue`属性, 它接收`Boolean`, 为`true`时显示`Dialog`。</em><br>
-<!-- <basic /><br> -->
-<t-button @click="showDialog">
-  点击此处查看对话框
-</t-button>
-<t-dialog v-model="dialogVisible" title="你唤起了对话框">
-  <template #msg>
-    <span>这是对话框内容。</span>
-  </template>
-  <template #btn>
-    <t-button @click="dialogVisible = false">
-      取消
-    </t-button>
-    <t-button @click="dialogVisible = false">
-      确认
-    </t-button>
-  </template>
-</t-dialog>
+<basic /><br>
 <tPreview compName="Dialog" fileName="dialog_1_basic"/>
 
 ## 自定义内容
